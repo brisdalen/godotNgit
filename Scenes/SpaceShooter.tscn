@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://PNGs/spaaaaaaaaaace.jpg" type="Texture" id=1]
+[ext_resource path="res://Scenes/pewpew.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/ohno.tscn" type="PackedScene" id=3]
+
+[node name="SpaceShooter" type="Node2D"]
+
+[node name="Background" type="Sprite" parent="."]
+visible = false
+position = Vector2( 42.3245, 289.405 )
+scale = Vector2( 1.20963, 1.24586 )
+texture = ExtResource( 1 )
+offset = Vector2( 390.405, 7.5132 )
+
+[node name="Pewpews" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="Node2D" parent="Pewpews" instance=ExtResource( 2 )]
+position = Vector2( 114.697, 590.258 )
+
+[node name="Node2D4" parent="Pewpews" instance=ExtResource( 2 )]
+position = Vector2( 377.338, 590.258 )
+
+[node name="Node2D7" parent="Pewpews" instance=ExtResource( 2 )]
+position = Vector2( 777.338, 590.258 )
+
+[node name="Node2D2" parent="Pewpews" instance=ExtResource( 2 )]
+position = Vector2( 246.338, 590.258 )
+
+[node name="Node2D5" parent="Pewpews" instance=ExtResource( 2 )]
+position = Vector2( 646.338, 590.258 )
+
+[node name="Node2D3" parent="Pewpews" instance=ExtResource( 2 )]
+position = Vector2( 506.338, 590.258 )
+
+[node name="Node2D6" parent="Pewpews" instance=ExtResource( 2 )]
+position = Vector2( 906.338, 590.258 )
+
+[node name="RigidBody2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 115.193, 69.9485 )
+scale = Vector2( 1, 1 )
+
+[node name="RigidBody2D2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 246.193, 70.9485 )
+scale = Vector2( 1, 1 )

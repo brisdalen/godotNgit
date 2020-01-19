@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://PNGs/pewpew.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10, 21.431 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="pewpew" type="Sprite" parent="."]
+position = Vector2( 1.12656, -23.2651 )
+scale = Vector2( 0.1647, 0.195332 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 21.01 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 1.19209e-007, -20.6859 )
+scale = Vector2( 4.64998, 1.22413 )
+shape = SubResource( 1 )
