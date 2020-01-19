@@ -41,6 +41,26 @@ position = Vector2( 906.338, 590.258 )
 position = Vector2( 115.193, 69.9485 )
 scale = Vector2( 1, 1 )
 
+[node name="RigidBody2D3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 377.193, 69.9485 )
+scale = Vector2( 1, 1 )
+
+[node name="RigidBody2D6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 771.193, 69.9485 )
+scale = Vector2( 1, 1 )
+
 [node name="RigidBody2D2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 246.193, 70.9485 )
+scale = Vector2( 1, 1 )
+
+[node name="RigidBody2D7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 640.193, 70.9485 )
+scale = Vector2( 1, 1 )
+
+[node name="RigidBody2D4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 508.193, 70.9485 )
+scale = Vector2( 1, 1 )
+
+[node name="RigidBody2D5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 902.193, 70.9485 )
 scale = Vector2( 1, 1 )

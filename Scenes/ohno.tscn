@@ -1,42 +1,56 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Fonts/SixCaps-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/ohno.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/Sic_Caps_100.tres" type="DynamicFont" id=2]
 
-[sub_resource type="PhysicsMaterial" id=3]
+[sub_resource type="PhysicsMaterial" id=1]
 
-[sub_resource type="CapsuleShape2D" id=4]
-radius = 140.0
-height = 136.618
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 137.708
+height = 133.651
 
-[sub_resource type="StreamTexture" id=1]
+[sub_resource type="GDScript" id=4]
+script/source = "extends CollisionShape2D
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+# Called when the node enters the scene tree for the first time.
+#func _ready():
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass"
+
+[sub_resource type="StreamTexture" id=3]
 flags = 4
 load_path = "res://.import/ohnoes.png-1b690434093cda4a8c8634a9db1a5bcd.stex"
 
-[sub_resource type="DynamicFont" id=2]
-size = 100
-font_data = ExtResource( 1 )
-
-[node name="RigidBody2D" type="RigidBody2D"]
+[node name="ohno" type="RigidBody2D"]
 scale = Vector2( 0.329723, 0.360911 )
 mass = 3.06122
-physics_material_override = SubResource( 3 )
+physics_material_override = SubResource( 1 )
+script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -3.58681, -1.96403 )
 rotation = 1.57622
 scale = Vector2( 0.292941, 0.338964 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
+script = SubResource( 4 )
 
 [node name="ohnoes" type="Sprite" parent="."]
 scale = Vector2( 0.308024, 0.291534 )
-texture = SubResource( 1 )
+texture = SubResource( 3 )
 
 [node name="Label" type="Label" parent="ohnoes"]
 margin_left = -80.5491
 margin_top = -74.3884
 margin_right = 62.4509
 margin_bottom = 58.6116
-custom_fonts/font = SubResource( 2 )
+rect_pivot_offset = Vector2( 70, 70 )
+custom_fonts/font = ExtResource( 2 )
 text = "*TEXT*"
 align = 1
 valign = 1
