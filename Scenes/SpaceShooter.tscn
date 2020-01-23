@@ -14,7 +14,6 @@ texture = ExtResource( 1 )
 offset = Vector2( 390.405, 7.5132 )
 
 [node name="Pewpews" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Node2D" parent="Pewpews" instance=ExtResource( 2 )]
 position = Vector2( 114.697, 590.258 )
@@ -39,28 +38,28 @@ position = Vector2( 906.338, 590.258 )
 
 [node name="RigidBody2D" parent="." instance=ExtResource( 3 )]
 position = Vector2( 115.193, 69.9485 )
-scale = Vector2( 1, 1 )
+scale = Vector2( 0.997953, 0.992378 )
 
 [node name="RigidBody2D3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 377.193, 69.9485 )
+position = Vector2( 379.193, 69.9485 )
 scale = Vector2( 1, 1 )
 
 [node name="RigidBody2D6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 771.193, 69.9485 )
+position = Vector2( 776.193, 69.9485 )
 scale = Vector2( 1, 1 )
 
 [node name="RigidBody2D2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 246.193, 70.9485 )
+position = Vector2( 247.193, 70.9485 )
 scale = Vector2( 1, 1 )
 
 [node name="RigidBody2D7" parent="." instance=ExtResource( 3 )]
-position = Vector2( 640.193, 70.9485 )
+position = Vector2( 644.193, 70.9485 )
 scale = Vector2( 1, 1 )
 
 [node name="RigidBody2D4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 508.193, 70.9485 )
-scale = Vector2( 1, 1 )
+position = Vector2( 511.193, 70.9485 )
+scale = Vector2( 0.991107, 1 )
 
 [node name="RigidBody2D5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 902.193, 70.9485 )
+position = Vector2( 908.193, 70.9485 )
 scale = Vector2( 1, 1 )
